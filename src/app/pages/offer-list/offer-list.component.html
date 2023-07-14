@@ -1,0 +1,9 @@
+<h1>Últimas ofertas</h1>
+<hr>
+<ul class="list-group">
+  <li *ngFor="let event of events" class="list-group-item">
+    <span>
+      <strong>{{ event.offer }}</strong> - {{ event.user }}
+    </span>
+  </li>
+</ul>

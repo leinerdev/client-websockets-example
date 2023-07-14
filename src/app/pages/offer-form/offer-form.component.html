@@ -1,0 +1,11 @@
+<form [formGroup]="offerForm" (ngSubmit)="sendOffer()">
+  <div class="mb-3">
+    <label class="form-label">Nombres</label>
+    <input formControlName="user" type="text" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Oferta</label>
+    <input formControlName="offer" type="number" class="form-control">
+  </div>
+  <button type="submit" class="btn btn-primary float-end">Enviar oferta</button>
+</form>
